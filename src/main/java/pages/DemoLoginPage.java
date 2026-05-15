@@ -15,17 +15,27 @@ public class DemoLoginPage {
         this.driver = driver;
     }
 
-    public void enterUsername(String username) {
+//    public void enterUsername(String username) {
+//        driver.findElement(usernameTextBox).clear();
+//        driver.findElement(usernameTextBox).sendKeys(username);
+//    }
+//
+//    public void enterPassword(String password) {
+//        driver.findElement(passwordTextBox).clear();
+//        driver.findElement(passwordTextBox).sendKeys(password);
+//    }
+//
+//    public void clickLogin() {
+//        driver.findElement(loginButton).click();
+//    }
+    public void login(String username, String password) {
+
         driver.findElement(usernameTextBox).clear();
         driver.findElement(usernameTextBox).sendKeys(username);
-    }
 
-    public void enterPassword(String password) {
         driver.findElement(passwordTextBox).clear();
         driver.findElement(passwordTextBox).sendKeys(password);
-    }
 
-    public void clickLogin() {
         driver.findElement(loginButton).click();
     }
 }

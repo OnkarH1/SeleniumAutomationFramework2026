@@ -10,10 +10,10 @@ public class DemoLoginTest extends BaseTest {
     public void testDemoLogin() {
 
         DemoLoginPage demoLoginPage = new DemoLoginPage(driver);
-
-        demoLoginPage.enterUsername("student");
-        demoLoginPage.enterPassword("Password123");
-        demoLoginPage.clickLogin();
+        demoLoginPage.login("student", "Password123");
+//        demoLoginPage.enterUsername("student");
+//        demoLoginPage.enterPassword("Password123");
+//        demoLoginPage.clickLogin();
 
         System.out.println("Title of the Page: " + driver.getTitle());
     }
