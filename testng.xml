@@ -1,7 +1,33 @@
-<suite name="TestSuite">
-	<test name="LoginTests">
+<suite name="Automation Suite" verbose="1">
+
+	<!-- ================= QA ENV - SMOKE ================= -->
+	<test name="QA Smoke Tests">
+		<parameter name="env" value="qa" />
+
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+
 		<classes>
-			<class name="tests.LoginTest"/>
+			<class name="tests.DemoLoginTest" />
 		</classes>
 	</test>
+
+	<!-- ================= UAT ENV - REGRESSION ================= -->
+	<test name="UAT Regression Tests">
+		<parameter name="env" value="uat" />
+
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="tests.LoginTest" />
+		</classes>
+	</test>
+
 </suite>

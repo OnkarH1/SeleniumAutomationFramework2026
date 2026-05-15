@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-15T14:24:10 IST" name="Default suite" finished-at="2026-05-15T14:24:23 IST" duration-ms="12708">
+  <suite started-at="2026-05-15T19:37:54 IST" name="Automation Suite" finished-at="2026-05-15T19:38:17 IST" duration-ms="23450">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.testValidLogin()[pri:0, instance:tests.LoginTest@24aed80c]" name="testValidLogin" class="tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="DemoLoginTest.testDemoLogin()[pri:0, instance:tests.DemoLoginTest@34123d65]" name="testDemoLogin" class="tests.DemoLoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-05-15T14:24:10 IST" name="Default test" finished-at="2026-05-15T14:24:23 IST" duration-ms="12708">
+    <test started-at="2026-05-15T19:37:54 IST" name="QA Smoke Tests" finished-at="2026-05-15T19:38:13 IST" duration-ms="19312">
       <class name="tests.DemoLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoLoginTest@206a70ef]" started-at="2026-05-15T14:24:10 IST" name="setUp" finished-at="2026-05-15T14:24:16 IST" duration-ms="6146" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DemoLoginTest@34123d65]" started-at="2026-05-15T19:37:54 IST" name="setUp" finished-at="2026-05-15T19:38:06 IST" duration-ms="12149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:0, instance:tests.DemoLoginTest@206a70ef]" started-at="2026-05-15T14:24:16 IST" name="testValidLogin" finished-at="2026-05-15T14:24:22 IST" duration-ms="5746" status="PASS">
+        <test-method signature="testDemoLogin()[pri:0, instance:tests.DemoLoginTest@34123d65]" started-at="2026-05-15T19:38:06 IST" name="testDemoLogin" finished-at="2026-05-15T19:38:11 IST" duration-ms="4818" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DemoLoginTest@206a70ef]" started-at="2026-05-15T14:24:22 IST" name="tearDown" finished-at="2026-05-15T14:24:23 IST" duration-ms="713" status="PASS">
+        </test-method> <!-- testDemoLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DemoLoginTest@34123d65]" started-at="2026-05-15T19:38:11 IST" name="tearDown" finished-at="2026-05-15T19:38:13 IST" duration-ms="2232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.DemoLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- QA Smoke Tests -->
+    <test started-at="2026-05-15T19:38:13 IST" name="UAT Regression Tests" finished-at="2026-05-15T19:38:17 IST" duration-ms="4096">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@24aed80c]" started-at="2026-05-15T19:38:13 IST" name="setUp" finished-at="2026-05-15T19:38:15 IST" duration-ms="2284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[uat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@24aed80c]" started-at="2026-05-15T19:38:15 IST" name="testValidLogin" finished-at="2026-05-15T19:38:17 IST" duration-ms="1325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@24aed80c]" started-at="2026-05-15T19:38:17 IST" name="tearDown" finished-at="2026-05-15T19:38:17 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- UAT Regression Tests -->
+  </suite> <!-- Automation Suite -->
 </testng-results>

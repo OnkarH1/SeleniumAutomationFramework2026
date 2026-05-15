@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Suite]">
+  <test thread-count="5" name="QA Smoke Tests(failed)">
+    <parameter name="env" value="qa"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.DemoLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testDemoLogin"/>
+        </methods>
+      </class> <!-- tests.DemoLoginTest -->
+    </classes>
+  </test> <!-- QA Smoke Tests(failed) -->
+  <test thread-count="5" name="UAT Regression Tests(failed)">
+    <parameter name="env" value="uat"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- UAT Regression Tests(failed) -->
+</suite> <!-- Failed suite [Automation Suite] -->
