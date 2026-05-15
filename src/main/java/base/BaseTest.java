@@ -18,7 +18,7 @@ public class BaseTest {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get("https://admin-demo.nopcommerce.com/login");
+		driver.get("https://practicetestautomation.com/practice-test-login/");
 	}
 
 	@AfterMethod
