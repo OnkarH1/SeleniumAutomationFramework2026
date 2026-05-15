@@ -15,8 +15,8 @@ public class LoginTest extends BaseTest {
 		loginPage.enterUsername("admin@yourstore.com");
 		loginPage.enterPassword("admin");
 		loginPage.clickLogin();
-Assert.assertEquals(driver.getTitle(), "Just a moment...");
-	//	System.out.println("Title of the Page: " + driver.getTitle());
+		Assert.assertEquals(driver.getTitle(), "Just a moment...");
+		// System.out.println("Title of the Page: " + driver.getTitle());
 	}
 
 }
